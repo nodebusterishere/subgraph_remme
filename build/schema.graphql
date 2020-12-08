@@ -1,0 +1,14 @@
+type Transferr @entity {
+  id: ID!
+  value: BigInt!
+  from: Bytes!
+  to: Bytes!
+  timestamp: BigInt
+}
+
+type Approvall @entity {
+  id: ID!
+  value: BigInt!
+  spender: Bytes!
+  timestamp: BigInt
+}
